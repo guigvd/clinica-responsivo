@@ -1,0 +1,313 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Source Sans Pro;
+    color: rgb(120, 120, 120);
+}
+
+header {
+    background-color: #00cad1;
+}
+
+footer {
+    background-color: #0c6e71;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 400;
+    color: white;
+    text-transform: uppercase;
+}
+
+span {
+    font-weight: bold;
+}
+
+/***/
+
+.topo {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0 15px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topo-menu {
+    text-decoration: none;
+    ;
+
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.logo-img {
+    width: 104px;
+}
+
+.topo-menu-item {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.topo-menu-item:hover {
+    color: black;
+    cursor: pointer;
+}
+
+/*******/
+
+.secao-recepcao {
+    background-image: url(assets/recepcao.png);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+
+    background-position-y: 35%;
+}
+
+.secao-recepcao-texto {
+    max-width: 1024px;
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+}
+
+.global {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.titulo h2 {
+    padding-top: 32px;
+}
+
+.titulo p {
+    padding-top: 18px;
+}
+
+.secao-sobre {
+    text-align: center;
+}
+
+/**/
+
+.secao-encontrar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 24px;
+}
+
+.secao-encontrar ul {
+    padding-left: 42px;
+    padding-top: 22px;
+}
+
+.secao-encontrar h2 {
+    font-size: 18px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.secao-encontrar figure {
+    width: calc(100% / 5);
+}
+
+.secao-encontrar img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/**/
+
+.secao-multi {
+    padding-top: 32px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 32px;
+}
+
+.secao-multi-texto {
+    text-align: center;
+
+    display: flex;
+    flex-flow: column wrap;
+    gap: 18px;
+}
+
+.secao-multi-img {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.secao-multi-img-block {
+    width: calc((100% / 3) - 50px);
+    margin: 0 25px;
+    display: flex;
+    flex-flow: column wrap;
+
+    box-shadow: 0px 0px 10px rgba(115, 115, 115, 2);
+}
+
+.secao-multi-img-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.secao-multi-img-block figcaption {
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.secao-multi-botao {
+    background-color: #00cad1;
+    color: white;
+    padding: 10px 20px;
+}
+
+.secao-contato {
+    text-align: center;
+    padding-top: 32px;
+    font-size: 16px;
+
+    display: flex;
+    flex-flow: column wrap;
+    gap: 16px;
+}
+
+.mapa {
+    width: 96%;
+    padding-top: 16px;
+    padding-bottom: 64px;
+    margin: 0 auto;
+}
+
+.secao-rodape {
+    padding: 24px;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    padding-bottom: 32px;
+}
+
+.secao-rodape p {
+    color: white;
+}
+
+/******/
+@media (max-width: 768px) {
+    .secao-recepcao {
+        height: 300px;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .secao-recepcao-texto{
+        padding: 10px;
+    }
+
+    .secao-encontrar-h2{
+        margin-left: -130px;
+    }
+
+    .secao-encontrar img {
+        display: none;
+    }
+
+    .secao-encontrar ul {
+        padding: 15px 0;
+        margin-left: -88px
+    }
+
+    .secao-encontrar {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .secao-multi-img-block {
+        width: calc((100% / 2) - 30px);
+        margin: 15px 15px;
+    }
+
+    @media (max-width: 425px) {
+        .global{
+            padding: 0 10px;
+        }
+
+        .secao-recepcao-texto{
+            padding: 10px;
+        }
+
+        .secao-recepcao-texto h1{
+            font-size: 26px;
+        }
+
+        h2{
+            font-size: 20px;
+        }
+
+        p, li{
+            font-size: 14px;
+        }
+
+
+        .topo {
+            flex-flow: column;
+        }
+
+        .topo-menu {
+            border-top: 2px solid #17acb1;
+            padding: 10px 18px;
+
+        }
+
+        .secao-recepcao {
+            height: 200px;
+        }
+
+        .secao-encontrar-h2{
+            padding-left: 46px;
+        }
+
+        .secao-encontrar ul {
+            padding-top: 18px;
+            padding-left: 40px;
+        }
+
+        .secao-multi-img-block {
+            width: calc((100%) - 40px);
+            margin: 20px 20px;
+        }
+
+        .secao-rodape p{
+            text-align: center;
+        }
+
+    }
+}
