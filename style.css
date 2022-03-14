@@ -329,6 +329,10 @@ a{
     font-weight: 650;
 }
 
+.menu-nav li:hover{
+    border-bottom: 2px solid black;
+}
+
 .h1-espec{
     color: rgb(120, 120, 120);
     text-align: center;
