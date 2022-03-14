@@ -1,0 +1,42 @@
+@media (max-width: 768px){
+    .block-table-img{
+        display: none;
+    }
+
+    .block-texto{
+        width: 70%;
+    }
+
+    table{
+        width: 100%;
+    }
+
+    .block-table{
+        width: 94%;
+    }
+}
+
+@media (max-width: 425px){
+
+    table{
+        width: 100%;
+    }
+
+    .secao-tabelas{
+        width: 100%;
+    }
+
+    .block-texto{
+        width: 90%;
+    }
+
+    .global{
+        padding: 0;
+    }
+
+    .block-table{
+        width: 100%;
+        height: 100%;
+    }
+
+}
